@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .card {
+    margin-top: 100px;
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .card img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="{{url_for('static', filename='sripavan.jpg')}}" alt="Card 1">
+      <h3>N180606</h3>
+      <p>BODDU SRI PAVAN</p>
+    </div>
+    <div class="card">
+      <img src="{{url_for('static', filename='vikram.jpg')}}" alt="Card 2">
+      <h3>N181167</h3>
+      <p>BANDI VIKRAM KUMAR</p>
+    </div>
+    <div class="card">
+      <img src="{{url_for('static', filename='pavan.jpg')}}" alt="Card 3">
+      <h3>N180XXX</h3>
+      <p>MANNEM PAVAN KUMAR</p>
+    </div>
+    <div class="card">
+      <img src="{{url_for('static', filename='sandhya.jpg')}}" alt="Card 4" height="280px">
+      <h3>N181108</h3>
+      <p>MALLIDI SANDHYA RANI</p>
+    </div>
+    <div class="card">
+      <img src="{{url_for('static', filename='padma.jpg')}}" alt="Card 5">
+      <h3>N180272</h3>
+      <p>PRAGADA PADMAPRIYA</p>
+    </div>
+  </div>
+</body>
+</html>
